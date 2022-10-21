@@ -43,8 +43,9 @@ const userReducer = (state='',action) => {
                 else return blog;
             });
             let newObj1 = {user:{items:modifiedArray1}};
+            let stateobj2 = {items:modifiedArray1};
             localStorage.setItem("BlogStorage",JSON.stringify(newObj1));
-            return newObj1;
+            return stateobj2;
             
         case "Like_Blog":
             let blogsArray = state?.items;

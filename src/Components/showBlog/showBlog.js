@@ -78,7 +78,8 @@ const ShowBlog = (props) => {
         newBlog.title = tempo.title;
         newBlog.category = tempo.category;
         newBlog.content = tempo.content; 
-        dispatch(editBlog(newBlog)); 
+        dispatch(editBlog(newBlog));
+        nav("/"); 
     };
 
     const onDeleteHandler = (e) => {
